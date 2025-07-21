@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoseTrack.Tracker.</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />">
+</head>
+<body>
+     <nav
+        class="bg-blue-900 dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="Green Modern Herbal Medicine Logo Design.png" class="h-12" alt="DoseTrack Logo" />
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">DoseTrack</span>
+            </a>
+            <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse items-center justify-center">
+                <a href="login.html">
+                    <button type="button"
+                        class="cursor-pointer text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        Get started
+                    </button>
+                    <a href="profile.html" class="text-white hover:text-blue-700 ml-10">
+                           <i class="fa-solid fa-user mr-3" style="color:white;"></i>Profile
+                </a>
+            </div>
+            <div>
+              <button class="dropdownbtn md:hidden cursor-pointer p-2 rounded-md hover:bg-gray-100" onclick="dropdownMenu()">
+                <svg class="w-6 h-6 text-white" fill="none" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                   
+                    <path d="M4 6h16M4 12h16m-7 6h7"></path>
+                    
+                </svg>
+             </button>
+            </div>
+            
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1  flex-col 
+                        md:static md:flex md:w-auto md:shadow-none 
+                        md:flex-row md:items-center md:space-x-4" id="navbar-sticky">
+                <ul
+                    class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <li>
+                        <a href="index.html"
+                            class="block py-2 px-3 text-white rounded-sm md:bg-transparent md:text-white md:p-0 md:dark:text-white hover:text-white md:dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:hover:bg-blue-700"
+                            aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html"
+                            class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-blue-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+                    </li>
+                    <li>
+                        <a href="tracker.html"
+                            class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-blue-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Tracker</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+       
+    <div class="h-screen">
+        Calendar....
+    </div>
+
+  
+
+    <footer class="bg-gray-900 rounded-lg shadow-sm w-100% text-white mt-10 mb-0">
+            <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+                <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                  <img src="Green Modern Herbal Medicine Logo Design.png" class="h-12" alt="DoseTrack Logo" />
+                 <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">DoseTrack</span>
+               </a>
+                <div class="flex lg:space-x-70 space-x-10">
+                    <ul class=" mt-6 mb-6 text-sm font-medium text-white sm:mb-0"><u> Help</u>
+
+                        <li>
+                            <a href="#" class="hover:underline me-4 md:me-6">Help Center</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline me-4 md:me-6">Trading</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline">Report an Issue</a>
+                        </li>
+                    </ul>
+
+                    <ul class=" mt-6 mb-6 text-sm font-medium text-white sm:mb-0 "><u> Policies and
+                            Terms of Use</u>
+
+                        <li>
+                            <a href="#" class="hover:underline me-4 md:me-6">Terms& Policies of Our Community</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline me-4 md:me-6">Being a responsible trader</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline">Trust &Safety</a>
+                        </li>
+                    </ul>
+                    <ul class=" mt-6 mb-6 text-sm font-medium text-white sm:mb-0 ">
+
+
+                        <li>
+                            <a href="https://share.google/8oXWvvu1MwpWPLSaa" class="hover:underline me-4 md:me-6">DoseTrack Head Office</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline me-4 md:me-6">P.O Box 43302-00395</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline">Kenya</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>    
+
+            
+
+            <div class="flex justify-center space-x-6 mb-6">
+                <a href="#" aria-label="Facebook" class="text-white hover:text-white"><svg class="h-6 w-6"
+                        fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd"
+                            d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                            clip-rule="evenodd" />
+                    </svg></a>
+                <a href="#" aria-label="Twitter" class="text-white hover:text-white"><svg class="h-6 w-6"
+                        fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd"
+                            d="M21.751 8.194c-.788.35-1.63.585-2.513.69a4.382 4.382 0 001.923-2.42c-.827.49-1.745.85-2.724 1.04A4.373 4.373 0 0016.15 6c-2.417 0-4.376 1.96-4.376 4.376 0 .343.038.678.112.999A12.41 12.41 0 013.65 6.908a4.377 4.377 0 001.352 5.843c-.72-.022-1.4-.22-2-.55v.054c0 2.11 1.502 3.87 3.494 4.27a4.37 4.37 0 01-1.992.076c.555 1.73 2.164 2.99 4.07 3.025a8.787 8.787 0 01-5.43 1.87c-.353 0-.7-.02-1.043-.06A12.356 12.356 0 008.52 21c7.302 0 11.29-6.05 11.29-11.29l-.008-.515A8.073 8.073 0 0022 8.617a7.907 7.907 0 01-2.249.617z"
+                            clip-rule="evenodd" />
+                    </svg></a>
+                <a href="#" aria-label="Github" class="text-white hover:text-white"><svg class="h-6 w-6"
+                        fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd"
+                            d="M12 2C6.477 2 2 6.477 2 12c0 4.237 3.06 7.812 7.094 8.817.517.1.706-.224.706-.497 0-.245-.008-.892-.013-1.75C7.052 19.375 6.35 18.19 6.35 18.19c-.47-.119-1.148-.598-1.148-.598-.938-.64.07-.628.07-.628 1.037.072 1.583 1.063 1.583 1.063.92 1.577 2.415 1.12 3.004.857.094-.667.36-1.12.658-1.377-2.29-.26-4.696-1.145-4.696-5.092 0-1.124.402-2.045 1.06-2.766-.106-.26-.46-1.307.102-2.728 0 0 .867-.277 2.837 1.057A9.816 9.816 0 0112 6.817c.897.003 1.798.118 2.642.35 1.968-1.334 2.834-1.057 2.834-1.057.564 1.42.21 2.468.103 2.728.66.72 1.057 1.642 1.057 2.766 0 3.958-2.41 4.83-4.706 5.084.37.317.698.94.698 1.893 0 1.365-.012 2.467-.012 2.798 0 .276.186.603.712.497A9.954 9.954 0 0022 12C22 6.477 17.523 2 12 2z"
+                            clip-rule="evenodd" />
+                    </svg></a>
+                <a href="#" aria-label="LinkedIn" class="text-white hover:text-white"><svg class="h-6 w-6"
+                        fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd"
+                            d="M19.75 3H4.25A1.25 1.25 0 003 4.25v15.5A1.25 1.25 0 004.25 21h15.5A1.25 1.25 0 0021 19.75V4.25A1.25 1.25 0 0019.75 3zM8.22 18.25h-2.47V9.75h2.47v8.5zm-1.235-9.72a1.49 1.49 0 110-2.98 1.49 1.49 0 010 2.98zM18.25 18.25h-2.47v-4.23c0-1.01-.02-2.31-1.406-2.31-1.406 0-1.625 1.1-1.625 2.236v4.304h-2.47V9.75h2.37v1.087h.033c.33-.625 1.137-1.287 2.34-1.287 2.5 0 2.96 1.645 2.96 3.787l-.002 4.363z"
+                            clip-rule="evenodd" />
+                    </svg></a>
+            </div>
+            <hr class="my-6 border-white sm:mx-auto dark:border-white lg:my-8" />
+            <span class="block text-sm text-white sm:text-center dark:text-white">© 2025 <a href="index.html"
+                    class="hover:underline">Swapee™</a>. All Rights Reserved.</span>
+
+
+    </div>
+
+    </footer>
+    <script src="home.js"></script>
+    
+</body>
+</html>
