@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DoseTrack.Tracker.</title>
+    
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.18/index.global.min.js'></script>
+     <script src='https://cdn.jsdelivr.net/npm/@fullcalendar/core@6.1.18/index.global.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid@6.1.18/index.global.min.js'></script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
-<body>
+<body class="bg-blue-200 bg-gradient-to-b from-blue-200 to-blue-400">
      <nav
         class="bg-blue-900 dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
@@ -63,8 +68,28 @@
         </div>
     </nav>
        
-    <div class="h-screen">
-        Calendar....
+    <div class="">
+        <h1 class="mt-18 text-center text-4xl underline">TRACKER</h1>
+
+        <!-- <div id='calendar' class="mt-20 w-100 h-100 ml-80"></div> -->
+        <form class="text-center text-xl flex flex-col mt-10 mb-0 items-center">
+            <label for="med-name" class="pt-4">Name of your medication: </label>
+            <input type="text" id="med-name" class="border bg-white focus:border-indigo-500 w-100 border-black object-center">
+          <label for="startDate" class="pt-6">What is the Start Date for your medication:</label>
+          <input type="date" id="startDate" name="selected_date" class="bg-white"> 
+
+           <label for="lastDate" class="pt-6">What is the end Date for your medication:</label>
+          <input type="date" id="lastDate" name="selected_date" class="bg-white"> 
+
+
+
+        </form>
+
+        <canvas id="donutChart">
+
+        </canvas>
+         
+
     </div>
 
   
@@ -154,7 +179,7 @@
     </div>
 
     </footer>
-    <script src="home.js"></script>
+    <script src="tracker.js"></script>
     
 </body>
 </html>
